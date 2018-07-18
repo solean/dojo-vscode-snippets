@@ -1,0 +1,91 @@
+{
+	"Data_dojo_attach_point": {
+		"scope": "html",
+		"prefix": "dda",
+		"body": [
+			"data-dojo-attach-point=\"$1\""
+		],
+		"description": "Snippet for dojo's data-dojo-attach-point template attribute."
+	},
+	"Data_dojo_attach_event": {
+		"scope": "html",
+		"prefix": "dde",
+		"body": [
+			"data-dojo-attach-event=\"$1\""
+		],
+		"description": "Snippet for dojo's data-dojo-attach-event template attribute."
+	},
+	"Data_dojo_props": {
+		"scope": "html",
+		"prefix": "ddp",
+		"body": [
+			"data-dojo-props=\"$1\""
+		],
+		"description": "Snippet for dojo's data-dojo-props template attribute."
+	},
+	"Data_dojo_type": {
+		"scope": "html",
+		"prefix": "ddt",
+		"body": [
+			"data-dojo-type=\"$1\""
+		],
+		"description": "Snippet for dojo's data-dojo-type template attribute."
+	},
+	"Dojo_widget": {
+		"scope": "javascript",
+		"prefix": "widget",
+		"body": [
+			"define([",
+				"\t'dojo/_base/declare',",
+				"\t'dijit/_WidgetBase',",
+				"\t$1",
+				"], function(declare, _WidgetBase) {",
+				"",
+				"\treturn declare($2[_WidgetBase$3], {",
+				"\t\t$4",
+				"\t});",
+				"});"	
+		],
+		"description": "Build the skeleton for a dojo widget."
+	},
+	"Dojo_templated_widget": {
+		"scope": "javascript",
+		"prefix": "templated",
+		"body": [
+			"define([",
+			"\t'dojo/_base/declare',",
+			"\t'dijit/_WidgetBase',",
+			"\t'dijit/_TemplatedMixin',",
+			"\t'dijit/_WidgetsInTemplateMixin',",
+			"\t'dojo/text!$1'",
+			"], function(declare, _WidgetBase, _TemplatedMixin, _WidgetsInTemplateMixin, template) {",
+			"",
+			"\treturn declare($2[_WidgetBase, _TemplatedMixin, _WidgetsInTemplateMixin], {",
+			"\t\ttemplateString: template,",
+			"",
+			"\t\t$3",
+			"\t});",
+			"});"
+		],
+		"description": "Build the skeleton for a templated dojo widget."
+	},
+	"Dojo_lang_hitch": {
+		"scope": "javascript",
+		"prefix": "hitch",
+		"body": [
+			"lang.hitch(this, function($1) {",
+			"\t$2",
+			"});"
+		],
+		"description": "Snippet for dojo's common lang.hitch call."	
+	},
+	"Dojo_this_inherited_arguments": {
+		"scope": "javascript",
+		"prefix": "tia",
+		"body": [
+			"this.inherited(arguments);",
+			"$1"
+		],
+		"description": "Snippet for dojo's common this.inherited(arguments) call."
+	}
+}
